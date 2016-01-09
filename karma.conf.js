@@ -1,0 +1,15 @@
+module.exports = function (config) {
+	'use strict';
+
+	config.set({
+		basePath: '',
+		frameworks: ['jasmine'],
+		files: [
+            'dist/js/bundle*.js',
+            'node_modules/angular-mocks/angular-mocks.js'
+		],
+		autoWatch: true,
+		singleRun: false,
+		browsers: ['PhantomJS']
+	});
+};
