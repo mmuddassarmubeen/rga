@@ -1,9 +1,10 @@
 angular = require('angular');
 
 var myModal = angular.module('rga');
-myModal.controller('mymodalcontroller', function ($scope) {
+myModal.controller('mymodalcontroller', ['$scope','videoService',function ($scope,videoService) {
 
 	'use strict';
-    $scope.link = 'Modal body';
-    $scope.body = 'Modal body';
-});
+    $scope.currentlink = videoService.getLink();
+    console.log('get the link');
+	console.log($scope.currentlink);
+}]);

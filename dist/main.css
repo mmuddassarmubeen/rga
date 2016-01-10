@@ -60,9 +60,6 @@ body {
   margin: 0;
   padding: 0; }
 
-.hidden {
-  display: none; }
-
 #main {
   background: #fff;
   position: relative;
@@ -82,18 +79,12 @@ body {
   font-size: 100px;
   font-weight: 100;
   text-align: center;
-  color: rgba(175, 47, 47, 0.15);
-  -webkit-text-rendering: optimizeLegibility;
-  -moz-text-rendering: optimizeLegibility;
-  text-rendering: optimizeLegibility; }
+  color: rgba(175, 47, 47, 0.15); }
 
 #header {
   color: #777;
   padding: 10px 15px;
   height: 105px;
-  border-bottom: 1px solid #e6e6e6; }
-
-#suggestion {
   border-bottom: 1px solid #e6e6e6; }
 
 #footer:before {
@@ -114,6 +105,9 @@ body {
 .imageClass {
   position: absolute;
   z-index: -1; }
+
+.suggestions {
+  margin: 10px 10px 10px 10px; }
 
 .suggestions:after {
   content: '';

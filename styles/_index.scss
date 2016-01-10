@@ -4,10 +4,6 @@ body {
 	padding: 0;
 }
 
-.hidden {
-	display: none;
-}
-
 #main {
 	background: #fff;
 	position: relative;
@@ -31,9 +27,6 @@ body {
 	font-weight: 100;
 	text-align: center;
 	color: rgba(175, 47, 47, 0.15);
-	-webkit-text-rendering: optimizeLegibility;
-	-moz-text-rendering: optimizeLegibility;
-	text-rendering: optimizeLegibility;
 }
 
 #header {
@@ -43,9 +36,6 @@ body {
 	border-bottom: 1px solid #e6e6e6;
 }
 
-#suggestion{
-	border-bottom: 1px solid #e6e6e6;
-}
 
 #footer:before {
 	content:'';
@@ -70,12 +60,12 @@ body {
 	z-index:-1;
 }
 
+.suggestions{
+	margin: 10px 10px 10px 10px;
+}
 .suggestions:after{
 	content:'';
     display:block;
     clear: both;
 }
-
-
-    
 

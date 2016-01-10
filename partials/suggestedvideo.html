@@ -1,15 +1,13 @@
 <div>
 	<div ng-controller="videoCtrl">
-		<div ng-repeat="item in vids.videos">
+		<div ng-repeat="item in videos">
 		<div class="suggestedvideo">
-			<a ng-click="modal()"><img src="{{item.img}}" class="imageClass"/></a>
-			<a ng-click="modal()">{{item.title}}</a>
+			<img src="{{item.img}}" class="imageClass"/>
+			<a href="#{{modal1}}" class="btn btn-success" data-toggle="modal" ng-click="modal(item.link)">{{item.title}}</a>
 		</div>
 		</div>
-		<div ng-if="modalShown">
-			<div ng-controller="mymodalcontroller">
-				<modal  modal-body="item.link"></modal>
-			</div>
-		</div>	
+	
+      <modal lolo="modal1"></modal>
+
 	</div>
 </div>
